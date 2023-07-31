@@ -16,6 +16,8 @@ function PlayerProfile({ playerData }) {
       <div className='rank-details'>
         <p>Rank: {playerData.global.rank.rankName}</p>
         <p>LP: {playerData.global.rank.rankScore}</p>
+        <p>Kills: {playerData.total.kills.value}</p>
+        <p>Damage: {playerData.total.damage.value}</p>
       </div>
     </div>
   )
