@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import { Routes, Route, } from 'react-router-dom';
 
 function App() {
 
@@ -13,8 +14,10 @@ function App() {
   }, [player])
 
   return (
-    <div className="App">
-    </div>
+    <Routes>
+      <div className="App">
+      </div>
+    </Routes>
   );
 }
 
