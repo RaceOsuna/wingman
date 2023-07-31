@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App {
+/* .App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -10,6 +10,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.app-header {
+  text-align: center;
+  background-color: #282c34;
+  margin: 0px 0px;
+  padding:20px 0;
   color: white;
 }
 

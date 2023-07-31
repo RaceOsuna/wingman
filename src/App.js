@@ -14,11 +14,11 @@ function App() {
     fetch(`https://api.mozambiquehe.re/bridge?auth=bae15f3f336782882976819cd65d9ef3&player=${player}&platform=PC`)
     .then(res => res.json())
     .then(data => setPlayerData(data))
-  }, [player])
+  }, [])
 
   return (
     <div>
-      <header className="App-header">
+      <header className="app-header">
         <h1>Wingman</h1>
       </header>
       <div className="App">

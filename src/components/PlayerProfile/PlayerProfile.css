@@ -1,0 +1,21 @@
+.player-profile {
+  background-color: #54585f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: rgb(208, 60, 60);
+  padding: 20px 0;
+}
+
+.legend-icon {
+  display: flex;
+  width: 200px;
+  margin: 20px 0;
+}
+
+.legend-icon img {
+  width: 100%;
+}
