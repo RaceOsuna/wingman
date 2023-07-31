@@ -16,6 +16,9 @@ function App() {
 
   return (
     <div className="App">
+      <header className="App-header">
+        <h1>Wingman</h1>
+      </header>
       <Routes>
         <Route path="/" element={<Form player={player} setPlayer={setPlayer} />} />
       </Routes>
