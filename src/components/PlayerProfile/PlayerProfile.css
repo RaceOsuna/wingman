@@ -43,6 +43,11 @@
   align-items: center;
   gap: 20px;
   font-family: Source Code Pro;
-  font-size: 20px;
+  /* font-size: 20px; */
   color: white
+}
+
+.status {
+  margin: 20px 0;
+  /* font-size: 20px; */
 }
