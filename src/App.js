@@ -7,14 +7,14 @@ import PlayerProfile from './components/PlayerProfile/PlayerProfile';
 
 function App() {
 
-  const [player, setPlayer] = useState('daltoosh');
+  const [player, setPlayer] = useState('nickmercs');
   const [playerData, setPlayerData] = useState([]);
 
   useEffect(() => {
     fetch(`https://api.mozambiquehe.re/bridge?auth=bae15f3f336782882976819cd65d9ef3&player=${player}&platform=PC`)
     .then(res => res.json())
     .then(data => setPlayerData(data))
-  }, [])
+  }, [player])
 
   return (
     <div>

@@ -7,11 +7,11 @@ function PlayerProfile({ playerData }) {
 
   const [news, setNews] = useState([])
 
-  useEffect(() => {
-    fetch(`https://api.mozambiquehe.re/news?auth=bae15f3f336782882976819cd65d9ef3`)
-    .then(res => res.json())
-    .then(data => setNews(data))
-  }, [])
+  // useEffect(() => {
+  //   fetch(`https://api.mozambiquehe.re/news?auth=bae15f3f336782882976819cd65d9ef3`)
+  //   .then(res => res.json())
+  //   .then(data => setNews(data))
+  // }, [])
 
   // const toggleStatus = () => {
   //   if (playerData.realtime.currentState === 'online') {
@@ -39,8 +39,8 @@ function PlayerProfile({ playerData }) {
         <p>Legend: {playerData.legends.selected.LegendName}</p>
         <p>Rank: {playerData.global.rank.rankName}</p>
         <p>LP: {playerData.global.rank.rankScore}</p>
-        <p>Kills: {playerData.total.kills.value}</p>
-        <p>Damage: {playerData.total.damage.value}</p>
+        {playerData.total.kills ? <p>Kills: {playerData.total.kills.value}</p> : null}
+        {playerData.total.damage ? <p>Damage: {playerData.total.damage.value}</p> : null}
       </div>
     </div>
   )
