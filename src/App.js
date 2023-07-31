@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { Routes, Route, } from 'react-router-dom';
+import Form from './components/Form/Form';
 
 function App() {
 
@@ -14,10 +15,11 @@ function App() {
   }, [player])
 
   return (
-    <Routes>
-      <div className="App">
-      </div>
-    </Routes>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Form player={player} setPlayer={setPlayer} />} />
+      </Routes>
+    </div>
   );
 }
 
