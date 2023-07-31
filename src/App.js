@@ -7,7 +7,7 @@ import PlayerProfile from './components/PlayerProfile/PlayerProfile';
 
 function App() {
 
-  const [player, setPlayer] = useState('daltoosh');
+  const [player, setPlayer] = useState('nickmercs');
   const [playerData, setPlayerData] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <header className="App-header">
+      <header className="app-header">
         <h1>Wingman</h1>
       </header>
       <div className="App">
