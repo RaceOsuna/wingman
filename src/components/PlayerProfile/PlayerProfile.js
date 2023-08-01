@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './PlayerProfile.css'
 import { useEffect, useState } from'react'
+import { NavLink } from'react-router-dom'
 
 function PlayerProfile({ playerData }) {
 
@@ -27,6 +28,10 @@ function PlayerProfile({ playerData }) {
 
   return (
     <div className='player-profile'>
+      <div className='links'>
+        <NavLink to="/">Logout</NavLink>
+        <NavLink to="/legends">Legends</NavLink>
+      </div>
       <div className='container'>
         <div className='name-avatar'>
           <img src={playerData.global.avatar} />
