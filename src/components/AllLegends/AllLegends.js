@@ -27,7 +27,7 @@ function AllLegends({ playerData }) {
   return (
     <div className='legend-page'>
       <div className='search'>
-        <input type='text' name='legends' placeholder='Search Legends' value={filteredLegends} onChange={e => setSearchParams({'legends': e.target.value})} />
+        <input type='text' name='legends' placeholder='Search Legends' value={filteredLegends || ''} onChange={e => setSearchParams({'legends': e.target.value})} />
       </div>
       <div className='legend-container'>
         {allLegends}
