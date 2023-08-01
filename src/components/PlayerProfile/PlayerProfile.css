@@ -12,6 +12,12 @@
   padding: 20px 0;
 }
 
+.player-profile a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 40px;
+}
+
 .name-avatar {
   display: flex;
   justify-content: center;
@@ -58,6 +64,7 @@
   align-items: center;
   /* width: 366px; */
 }
+
 
 @media screen and (min-width: 768px) {
   .player-profile {

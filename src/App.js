@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { Routes, Route, } from 'react-router-dom';
 import Form from './components/Form/Form';
 import PlayerProfile from './components/PlayerProfile/PlayerProfile';
+import AllLegends from './components/AllLegends/AllLegends';
+import Layout from './components/Layout/Layout';
 
 function App() {
 
@@ -18,13 +20,17 @@ function App() {
 
   return (
     <div>
-      <header className="app-header">
+      {/* <header className="app-header">
         <h1>Wingman</h1>
-      </header>
+      </header> */}
       <div className="App">
         <Routes>
           <Route path="/" element={<Form player={player} setPlayer={setPlayer} />} />
-          <Route path="/:player" element={<PlayerProfile playerData={playerData} />} />
+          <Route path="/:player" element={<Layout playerData={playerData} />}>
+            <Route index end element={<PlayerProfile playerData={playerData} />} />
+            <Route path="legends" element={<AllLegends playerData={playerData} />} />
+          </Route>
+          {/* <Route path="*" element={<h1>404</h1>} /> */}
         </Routes>
       </div>
     </div>
