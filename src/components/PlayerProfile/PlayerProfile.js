@@ -27,13 +27,15 @@ function PlayerProfile({ playerData }) {
 
   return (
     <div className='player-profile'>
-     <div className='name-avatar'>
-        <img src={playerData.global.avatar} />
-        <h1>{playerData.global.name}</h1>
-      </div>
-      <p className="status" style={{color: toggleStatus}}>{playerData.realtime.currentState}</p>
-      <div className='legend-icon'>
-        <img src={playerData.legends.selected.ImgAssets.icon} />
+      <div className='container'>
+        <div className='name-avatar'>
+          <img src={playerData.global.avatar} />
+          <h1>{playerData.global.name}</h1>
+        </div>
+        <p className="status" style={{color: toggleStatus}}>{playerData.realtime.currentState}</p>
+        <div className='legend-icon'>
+          <img src={playerData.legends.selected.ImgAssets.icon} />
+        </div>
       </div>
       <div className='rank-details'>
         <p>Legend: {playerData.legends.selected.LegendName}</p>
