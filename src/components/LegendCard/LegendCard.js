@@ -8,8 +8,10 @@ function LegendCard({ name, kills, image }) {
       <div className='legend-card-icon'>
         <img src={image} />
       </div>
-      <h1>{name}</h1>
-      <p>{kills}</p>
+      <div className='card-details'>
+        <h1>{name}</h1>
+        <p>{kills}</p>
+      </div>
     </div>
   )
 }

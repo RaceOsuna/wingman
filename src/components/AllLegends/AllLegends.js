@@ -14,7 +14,7 @@ function AllLegends({ playerData }) {
     <LegendCard
         key={legend}
         name={legend}
-        kills={data ? 'kills:' + ' ' + data[0].value : 'No Data'}
+        kills={data ? 'kills:' + ' ' + data[0].value : 'kills: 0'}
         image={images ? images.icon : 'coming soon'}
       />
     )

@@ -13,3 +13,7 @@
 .legend-card-icon img {
   width: 100%;
 }
+
+.card-details {
+  gap: 20px;
+}
