@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Form player={player} setPlayer={setPlayer} />} />
           <Route path="/:player" element={<Layout playerData={playerData} />}>
-            <Route index element={<PlayerProfile playerData={playerData} />} />
+            <Route index end element={<PlayerProfile playerData={playerData} />} />
             <Route path="legends" element={<AllLegends playerData={playerData} />} />
           </Route>
           {/* <Route path="*" element={<h1>404</h1>} /> */}

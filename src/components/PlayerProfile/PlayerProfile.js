@@ -28,10 +28,6 @@ function PlayerProfile({ playerData }) {
 
   return (
     <div className='player-profile'>
-      <div className='links'>
-        <NavLink to="/">Logout</NavLink>
-        <NavLink to="/legends">Legends</NavLink>
-      </div>
       <div className='container'>
         <div className='name-avatar'>
           <img src={playerData.global.avatar} />
