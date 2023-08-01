@@ -1,13 +1,19 @@
 .legend-container {
-  background-color: #54585f;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
   color: white;
   padding: 20px 20px;
   gap: 30px;
+}
+
+.search {
+  padding-top: 20px;
+  background-color: #54585f;
+}
+
+.legend-page {
+  background-color: #54585f;
+  min-height: 100vh;
 }
