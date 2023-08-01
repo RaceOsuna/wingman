@@ -92,4 +92,8 @@
   .container {
     width: 366px;
   }
+
+  .links {
+    flex-direction: column;
+  }
 }

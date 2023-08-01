@@ -43,11 +43,11 @@ function PlayerProfile({ playerData }) {
         </div>
       </div>
       <div className='rank-details'>
-        <p>Legend: {playerData.legends.selected.LegendName}</p>
+        <p>Selected Legend: {playerData.legends.selected.LegendName}</p>
         <p>Rank: {playerData.global.rank.rankName}</p>
         <p>LP: {playerData.global.rank.rankScore}</p>
-        {playerData.total.kills ? <p>Kills: {playerData.total.kills.value}</p> : null}
-        {playerData.total.damage ? <p>Damage: {playerData.total.damage.value}</p> : null}
+        {playerData.total.kills ? <p>Total Kills: {playerData.total.kills.value}</p> : null}
+        {playerData.total.damage ? <p>Total Damage: {playerData.total.damage.value}</p> : null}
       </div>
     </div>
   )
