@@ -4,10 +4,10 @@ import './PlayerProfile.css'
 
 function PlayerProfile({ playerData }) {
   
-  const toggleStatus = playerData.realtime.currentState === 'inMatch' ? 'green' : 'red'
+  const toggleStatus = playerData.realtime.currentState === 'inMatch' || 'online' ? 'green' : 'red'
 
   function showStatus() {
-    if (playerData.realtime.currentState === 'inMatch') {
+    if (playerData.realtime.currentState === 'inMatch' || "online") {
       return 'online'
     } else {
       return 'offline'
