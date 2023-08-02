@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './LegendCard.css'
 
-function LegendCard({ name, kills, image }) {
+function LegendCard({ name, kills, image, banner }) {
   return (
     <div className='legend-card'>
       <div className='legend-card-icon'>

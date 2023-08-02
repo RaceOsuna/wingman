@@ -18,7 +18,7 @@ function Layout({ setPlayer, setPlatform, setPlayerData }) {
       </header>
       <nav className='header-nav'>
         <NavLink to="/" onClick={clearUserData} >New User</NavLink>
-        <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'header-nav a'}>Profile</NavLink>
+        <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'header-nav a'}>Stats</NavLink>
         <NavLink to="legends" className={({isActive}) => isActive ? 'active' : 'header-nav a'}>Legends</NavLink>
         <NavLink to="news" className={({isActive}) => isActive ? 'active' : 'header-nav a'}>News</NavLink>
       </nav>

@@ -7,7 +7,6 @@ import PlayerProfile from './components/PlayerProfile/PlayerProfile';
 import AllLegends from './components/AllLegends/AllLegends';
 import Layout from './components/Layout/Layout';
 import Error from './components/Error/Error';
-import { element } from 'prop-types';
 
 function App() {
 
