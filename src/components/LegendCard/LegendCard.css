@@ -8,6 +8,10 @@
   background-color: rgb(0, 0, 0, 0.3);
 }
 
+.legend-card h1 {
+  padding-top: 20px;
+}
+
 .legend-card p {
   font-size: 16px;
 }
@@ -17,6 +21,6 @@
 }
 
 .card-details {
-  gap: 20px;
+  /* gap: 20px; */
   padding-bottom: 20px;
 }

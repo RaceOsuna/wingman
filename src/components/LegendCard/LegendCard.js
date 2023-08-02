@@ -5,11 +5,11 @@ import './LegendCard.css'
 function LegendCard({ name, kills, image, banner }) {
   return (
     <div className='legend-card'>
+        <h1>{name}</h1>
       <div className='legend-card-icon'>
         <img src={image} />
       </div>
       <div className='card-details'>
-        <h1>{name}</h1>
         <p>{kills}</p>
       </div>
     </div>
