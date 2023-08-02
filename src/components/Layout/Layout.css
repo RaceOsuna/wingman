@@ -1,18 +1,27 @@
 .app-header {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: #282c34;
   margin: 0px 0px;
   padding:20px 0;
   color: white;
+  position: fixed;
+  top: 0;
+  bottom: 1;
+  left: 0;
+  right: 0;
+  gap: 25px;
 }
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* text-align: center; */
   background-color: #282c34;
-  padding: 10px 10%;
+  padding: 0 10%;
   color: white;
+  height: 30px;
 }
 
 .header-nav a {
@@ -26,5 +35,5 @@
 
 .header-nav a.active {
   color: red;
-  padding-bottom: 0;
+  padding-bottom: 0;;
 }

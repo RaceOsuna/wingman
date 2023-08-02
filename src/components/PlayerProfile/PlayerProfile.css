@@ -9,7 +9,7 @@
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: rgb(208, 60, 60);
-  padding: 20px 0;
+  padding: 150px 0;
 }
 
 .player-profile a {
@@ -35,7 +35,7 @@
 
 .legend-icon {
   display: flex;
-  width: 250px;
+  width: 300px;
   margin: 20px 0;
 }
 

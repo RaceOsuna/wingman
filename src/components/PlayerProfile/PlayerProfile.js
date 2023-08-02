@@ -1,30 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './PlayerProfile.css'
-import { useEffect, useState } from'react'
-import { NavLink } from'react-router-dom'
 
 function PlayerProfile({ playerData }) {
-
-  const [news, setNews] = useState([])
-
-  // useEffect(() => {
-  //   fetch(`https://api.mozambiquehe.re/news?auth=bae15f3f336782882976819cd65d9ef3`)
-  //   .then(res => res.json())
-  //   .then(data => setNews(data))
-  // }, [])
-
-  // const toggleStatus = () => {
-  //   if (playerData.realtime.currentState === 'online') {
-  //     return 'green'
-  //   } else {
-  //     return 'red'
-  //   }
-  // }
   
-  const toggleStatus = playerData.realtime.currentState === 'online' ? 'green' : 'red'
+  const toggleStatus = playerData.realtime.currentState === 'inMatch' ? 'green' : 'red'
 
-  console.log(news)
+  function showStatus() {
+    if (playerData.realtime.currentState === 'inMatch') {
+      return 'online'
+    } else {
+      return 'offline'
+    }
+  }
 
   return (
     <div className='player-profile'>
@@ -33,7 +21,7 @@ function PlayerProfile({ playerData }) {
           <img src={playerData.global.avatar} />
           <h1>{playerData.global.name}</h1>
         </div>
-        <p className="status" style={{color: toggleStatus}}>{playerData.realtime.currentState}</p>
+        <p className="status" style={{color: toggleStatus}}>{showStatus()}</p>
         <div className='legend-icon'>
           <img src={playerData.legends.selected.ImgAssets.icon} />
         </div>
