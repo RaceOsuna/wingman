@@ -1,0 +1,28 @@
+.news-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.news-card img {
+  width: 100%;
+}
+
+.news-card a {
+  font-size: calc(14px + 1vmin);
+  text-decoration:  none;
+  color: white;
+}
+
+.news-card p{
+  font-size: calc(10px + 1vmin);
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

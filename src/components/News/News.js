@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import NewsCard from '../NewsCard/NewsCard'
+import './News.css'
 
 function News({ news }) {
   
@@ -8,13 +9,13 @@ function News({ news }) {
     <NewsCard 
       title={article.title}
       link={article.link}
-      image={article.image}
+      image={article.img}
       shortDesc={article.short_desc}
     />
   ))
   
   return (
-    <div>
+    <div className='news-container'>
       {displayNews}
     </div>
   )
