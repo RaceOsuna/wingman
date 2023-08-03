@@ -16,6 +16,10 @@ function LegendCard({ name, kills, image }) {
   )
 }
 
-LegendCard.propTypes = {}
+LegendCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  kills: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired
+}
 
 export default LegendCard

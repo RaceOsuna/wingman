@@ -37,6 +37,8 @@ function AllLegends({ playerData }) {
   )
 }
 
-AllLegends.propTypes = {}
+AllLegends.propTypes = {
+  playerData: PropTypes.object.isRequired,
+}
 
 export default AllLegends

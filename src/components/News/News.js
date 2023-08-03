@@ -21,6 +21,8 @@ function News({ news }) {
   )
 }
 
-News.propTypes = {}
+News.propTypes = {
+  news: PropTypes.arrayOf(PropTypes.object).isRequired
+}
 
 export default News
