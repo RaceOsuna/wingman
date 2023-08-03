@@ -4,15 +4,8 @@ import './PlayerProfile.css'
 
 function PlayerProfile({ playerData }) {
   
-  const toggleStatus = playerData.realtime.currentState === 'inMatch' || 'online' ? 'green' : 'red'
+  const toggleStatus = playerData.realtime.currentState === ('inMatch' || 'online') ? 'green' : 'red'
 
-  function showStatus() {
-    if (playerData.realtime.currentState === 'inMatch' || "online") {
-      return 'online'
-    } else {
-      return 'offline'
-    }
-  }
 
   return (
     <div className='player-profile'>
@@ -21,7 +14,7 @@ function PlayerProfile({ playerData }) {
           <img src={playerData.global.avatar} />
           <h1>{playerData.global.name}</h1>
         </div>
-        <p className="status" style={{color: toggleStatus}}>{showStatus()}</p>
+        <p className="status" style={{color: toggleStatus}}>{playerData.realtime.currentState}</p>
         <div className='legend-icon'>
           <img src={playerData.legends.selected.ImgAssets.icon} />
         </div>

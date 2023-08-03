@@ -25,6 +25,10 @@
 }
 
 .header-nav a {
+  position: absolute;
+}
+
+.header-nav a {
   text-decoration: none;
   color: white;
   font-size: 18px;
