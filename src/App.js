@@ -8,16 +8,15 @@ import AllLegends from './components/AllLegends/AllLegends';
 import Layout from './components/Layout/Layout';
 import Error from './components/Error/Error';
 import News from './components/News/News';
+import LegendProfile from './components/LegendProfile/LegendProfile';
 
 function App() {
 
   const [platform, setPlatform] = useState('');
   const [player, setPlayer] = useState('');
-  const [playerData, setPlayerData] = useState(false);
-  const [error, setError] = useState(false);
+  const [playerData, setPlayerData] = useState({});
+  const [error, setError] = useState('');
   const [news, setNews] = useState([]);
-
-  console.log(news)
 
   function getPlayerData() {
     fetch(`https://api.mozambiquehe.re/bridge?auth=bae15f3f336782882976819cd65d9ef3&player=${player}&platform=${platform}`)
@@ -52,11 +51,14 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Form player={player} setPlayer={setPlayer} setPlatform={setPlatform} getPlayerData={getPlayerData} />} />
-          {playerData && <Route path="/:player" element={<Layout setPlatform={setPlatform} setPlayer={setPlayer} setPlayeData={setPlayerData}/>}>
+          {playerData.global && 
+          <Route path="/:player" element={<Layout setPlatform={setPlatform} setPlayer={setPlayer} setPlayerData={setPlayerData} player={player}/>}>
             <Route index end element={<PlayerProfile playerData={playerData} />} />
-            <Route path="legends" element={<AllLegends playerData={playerData} />} />
+            <Route path="legends" element={<AllLegends playerData={playerData} player={player} />} />
             <Route path="news" element={<News news={news} />} />
-          </Route>}
+            <Route path={`:name`} element={<LegendProfile playerData={playerData} />} />
+          </Route>
+          }
           <Route path="*" element={<Error error={error} />} />
         </Routes>
       </div>

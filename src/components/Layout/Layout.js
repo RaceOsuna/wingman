@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { NavLink, Outlet } from 'react-router-dom'
 import './Layout.css'
 
-function Layout({ setPlayer, setPlatform, setPlayerData }) {
+function Layout({ setPlayer, setPlatform, setPlayerData, player }) {
 
   function clearUserData() {
     setPlatform('')
     setPlayer('')
-    setPlayerData(false)
+    setPlayerData({})
   }
 
   return (
@@ -25,7 +25,7 @@ function Layout({ setPlayer, setPlatform, setPlayerData }) {
         </nav>
       </header>
       <main>
-        <Outlet />
+        <Outlet context={{player}}/>
       </main>
     </div>
   )

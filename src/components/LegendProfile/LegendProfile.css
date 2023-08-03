@@ -1,0 +1,39 @@
+.legend-profile {
+  background-color: #54585f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(240, 59, 59);
+  padding-top: 120px;
+}
+
+.profile {
+  width: 100%;
+}
+
+.profile h1 {
+  font-size: calc(34px + 2vmin);
+}
+
+.profile img {
+  width:100%
+}
+
+.legend-stats p {
+  color: white;
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .profile {
+    width: 80%
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .profile {
+    width: 65%;
+  }
+}
