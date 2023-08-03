@@ -40,3 +40,8 @@
 .form-container h1 {
   font-size: calc(34px + 2vmin);
 }
+
+.platforms button {
+  padding: 3px;
+  border: none;
+}

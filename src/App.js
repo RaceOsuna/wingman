@@ -50,7 +50,7 @@ function App() {
     <div>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Form player={player} setPlayer={setPlayer} setPlatform={setPlatform} getPlayerData={getPlayerData} />} />
+          <Route path="/" element={<Form player={player} setPlayer={setPlayer} setPlatform={setPlatform} getPlayerData={getPlayerData} platform={platform}/>} />
           {playerData.global && 
           <Route path="/:player" element={<Layout setPlatform={setPlatform} setPlayer={setPlayer} setPlayerData={setPlayerData} player={player}/>}>
             <Route index end element={<PlayerProfile playerData={playerData} />} />
