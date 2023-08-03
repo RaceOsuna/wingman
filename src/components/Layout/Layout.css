@@ -25,16 +25,17 @@
 }
 
 .header-nav a {
-  position: absolute;
-}
-
-.header-nav a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
 }
 
 .header-nav a.active {
