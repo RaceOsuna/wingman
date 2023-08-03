@@ -36,3 +36,7 @@
   color: white;
   border: 1px solid white;
 }
+
+.form-container h1 {
+  font-size: calc(34px + 2vmin);
+}

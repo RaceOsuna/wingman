@@ -1,30 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './PlayerProfile.css'
-import { useEffect, useState } from'react'
-import { NavLink } from'react-router-dom'
 
 function PlayerProfile({ playerData }) {
-
-  const [news, setNews] = useState([])
-
-  // useEffect(() => {
-  //   fetch(`https://api.mozambiquehe.re/news?auth=bae15f3f336782882976819cd65d9ef3`)
-  //   .then(res => res.json())
-  //   .then(data => setNews(data))
-  // }, [])
-
-  // const toggleStatus = () => {
-  //   if (playerData.realtime.currentState === 'online') {
-  //     return 'green'
-  //   } else {
-  //     return 'red'
-  //   }
-  // }
   
-  const toggleStatus = playerData.realtime.currentState === 'online' ? 'green' : 'red'
+  const toggleStatus = playerData.realtime.currentState === ('inMatch' || 'online') ? 'green' : 'red'
 
-  console.log(news)
 
   return (
     <div className='player-profile'>

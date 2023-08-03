@@ -20,7 +20,7 @@ function AllLegends({ playerData }) {
         key={legend}
         name={legend}
         kills={data ? 'kills:' + ' ' + data[0].value : 'kills: 0'}
-        image={images ? images.icon : 'coming soon'}
+        image={images.icon}
       />
     )
   })

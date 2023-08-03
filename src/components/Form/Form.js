@@ -20,6 +20,7 @@ function Form({player, setPlayer, setPlatform, getPlayerData }) {
   // console.log(formData.username)
   return (
     <div className='form-container'>
+      <h1>Wingman</h1>
       <div className='platforms'>
         <button value='PC' onClick={(e) => setPlatform(e.target.value)} >PC</button>
         <button value='X1' onClick={(e) => setPlatform(e.target.value)} >XBOX</button>
