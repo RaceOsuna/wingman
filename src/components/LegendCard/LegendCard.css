@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.card-details {
-  /* gap: 20px; */
-  padding-bottom: 20px;
+.legend-card a {
+  text-decoration: none;
+  color: white;;
 }
