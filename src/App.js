@@ -18,8 +18,6 @@ function App() {
   const [error, setError] = useState('');
   const [news, setNews] = useState([]);
 
-  console.log(news)
-
   function getPlayerData() {
     fetch(`https://api.mozambiquehe.re/bridge?auth=bae15f3f336782882976819cd65d9ef3&player=${player}&platform=${platform}`)
     .then(res => {

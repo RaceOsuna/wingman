@@ -6,7 +6,7 @@ import './LegendProfile.css'
 function LegendProfile({ playerData }) {
   
   const { name } = useParams()
-  console.log(name)
+  
   const legend = playerData.legends.all[name]
 
   return (
@@ -16,7 +16,7 @@ function LegendProfile({ playerData }) {
         <h1>{name}</h1>
         <div className="legend-stats">
           <p>{legend.data ? 'Kills:' + ' ' + legend.data[0].value : 'kills:' + ' ' + '0'}</p>
-          <p>{legend.data[0].rank ? 'Top Percintile:' + ' ' + Math.ceil(legend.data[0].rank.topPercent) + '%' : 'No Data'}</p>
+          <p>{legend.data? 'Top Percintile:' + ' ' + Math.ceil(legend.data[0].rank.topPercent) + '%' : 'Top Percentile: No Data'}</p>
         </div>
       </div>
     </div>
