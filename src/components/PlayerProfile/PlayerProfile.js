@@ -30,6 +30,8 @@ function PlayerProfile({ playerData }) {
   )
 }
 
-PlayerProfile.propTypes = {}
+PlayerProfile.propTypes = {
+  playerData: PropTypes.object
+}
 
 export default PlayerProfile

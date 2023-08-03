@@ -49,9 +49,6 @@ function App() {
 
   return (
     <div>
-      {/* <header className="app-header">
-        <h1>Wingman</h1>
-      </header> */}
       <div className="App">
         <Routes>
           <Route path="/" element={<Form player={player} setPlayer={setPlayer} setPlatform={setPlatform} getPlayerData={getPlayerData} />} />

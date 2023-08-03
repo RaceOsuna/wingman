@@ -13,6 +13,11 @@ function NewsCard({ title, link, image, shortDesc }) {
   )
 }
 
-NewsCard.propTypes = {}
+NewsCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  shortDesc: PropTypes.string.isRequired
+}
 
 export default NewsCard

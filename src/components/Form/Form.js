@@ -5,19 +5,11 @@ import { Link } from 'react-router-dom'
 import './Form.css'
 
 function Form({player, setPlayer, setPlatform, getPlayerData }) {
-  
-  // const [formData, setFormData] = useState({username: ''})
-
-  // function handleChange(event) {
-  //   setFormData({[event.target.name]: event.target.value})
-  // }
 
   function handleSubmit() {
-    // event.preventDefault()
-    // setPlayer(formData.username)
     getPlayerData()
   }
-  // console.log(formData.username)
+  
   return (
     <div className='form-container'>
       <h1>Wingman</h1>
@@ -34,6 +26,11 @@ function Form({player, setPlayer, setPlatform, getPlayerData }) {
   )
 }
 
-Form.propTypes = {}
+Form.propTypes = {
+  player: PropTypes.string.isRequired,
+  setPlatform: PropTypes.func.isRequired,
+  setPlayer: PropTypes.func.isRequired,
+  getPlayerData: PropTypes.func.isRequired
+}
 
 export default Form
