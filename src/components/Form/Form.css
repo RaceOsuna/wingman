@@ -45,3 +45,7 @@
   padding: 3px;
   border: none;
 }
+
+.platforms button:hover {
+  cursor: pointer;
+}
