@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@700&family=Poppins:wght@300&family=Source+Code+Pro&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   font-size: calc(16px + 2vmin);
   border-image-width: calc(16px + 3vmin);
+  font-family: Source Code Pro;
 }
 
 body {

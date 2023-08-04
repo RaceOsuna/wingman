@@ -1,10 +1,11 @@
 .news-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   color: white;
-  gap: 125px;
+  row-gap: 50px;
+  column-gap: 50px;
   background-color: #54585f;
   padding: 150px 0;
   /* min-width: 100vh; */

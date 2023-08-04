@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: space-between;
   width: 350px;
-  height: 300px;
   border-radius: 20px;
+  margin: 20px 20px;
 }
 
 .news-card img {

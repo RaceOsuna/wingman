@@ -1,0 +1,10 @@
+.error {
+  background-color: #54585f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(240, 59, 59);
+  padding-top: 120px;
+}

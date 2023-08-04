@@ -24,3 +24,7 @@
   text-decoration: none;
   color: white;;
 }
+
+.legend-card:hover {
+  border: 1px solid white;
+}
