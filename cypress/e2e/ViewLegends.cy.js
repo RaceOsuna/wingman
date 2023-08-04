@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('View Legends', () => {
   
   beforeEach(() => {
     cy.visit('http://localhost:3000/')
