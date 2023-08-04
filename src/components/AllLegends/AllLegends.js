@@ -4,7 +4,7 @@ import LegendCard from '../LegendCard/LegendCard'
 import './AllLegends.css'
 import { useSearchParams } from 'react-router-dom'
 
-function AllLegends({ playerData, player }) {
+function AllLegends({ playerData }) {
   
   const [searchParams, setSearchParams] = useSearchParams()
   const filteredLegends = searchParams.get('legends')
@@ -40,7 +40,6 @@ function AllLegends({ playerData, player }) {
 
 AllLegends.propTypes = {
   playerData: PropTypes.object.isRequired,
-  player: PropTypes.string.isRequired
 }
 
 export default AllLegends

@@ -36,7 +36,8 @@ Form.propTypes = {
   player: PropTypes.string.isRequired,
   setPlatform: PropTypes.func.isRequired,
   setPlayer: PropTypes.func.isRequired,
-  getPlayerData: PropTypes.func.isRequired
+  getPlayerData: PropTypes.func.isRequired,
+  platform: PropTypes.string.isRequired
 }
 
 export default Form

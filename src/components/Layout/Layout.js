@@ -35,7 +35,8 @@ function Layout({ setPlayer, setPlatform, setPlayerData, player }) {
 Layout.propTypes = {
   setPlatform: PropTypes.func.isRequired,
   setPlayer: PropTypes.func.isRequired,
-  setPlayerData: PropTypes.func.isRequired
+  setPlayerData: PropTypes.func.isRequired,
+  player: PropTypes.string.isRequired,
 }
 
 export default Layout
