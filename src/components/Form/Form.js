@@ -26,7 +26,7 @@ function Form({player, setPlayer, setPlatform, getPlayerData, platform }) {
       </div>
       <div className='form'>
         <input type="text" name="username" value={player} placeholder="Username" onChange={(e) => setPlayer(e.target.value)} />
-        <Link to={`/${player}`} onClick={handleSubmit}>Submit</Link>
+        <Link name="submit" to={`/${player}`} onClick={handleSubmit}>Submit</Link>
       </div>
     </div>
   )
