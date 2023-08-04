@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './LegendCard.css'
 import { NavLink, useOutletContext } from 'react-router-dom'
+import { scrollToTop } from '../../scrollToTop'
 
 function LegendCard({ name, image }) {
   
@@ -9,7 +10,7 @@ function LegendCard({ name, image }) {
 
   return (
     <div className='legend-card'>
-      <NavLink to={`/${player}/${name}`}>
+      <NavLink onClick={scrollToTop} to={`/${player}/${name}`}>
         <h1>{name}</h1>
         <div className='legend-card-icon'>
           <img src={image} />

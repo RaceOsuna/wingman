@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink, Outlet } from 'react-router-dom'
 import './Layout.css'
+import { scrollToTop } from '../../scrollToTop'
 
 function Layout({ setPlayer, setPlatform, setPlayerData, player }) {
 
@@ -19,9 +20,9 @@ function Layout({ setPlayer, setPlatform, setPlayerData, player }) {
         </div>  
         <nav className='header-nav'>
           <NavLink to="/" onClick={clearUserData} >New User</NavLink>
-          <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'header-nav a'}>Stats</NavLink>
-          <NavLink to="legends" className={({isActive}) => isActive ? 'active' : 'header-nav a'}>Legends</NavLink>
-          <NavLink to="news" className={({isActive}) => isActive ? 'active' : 'header-nav a'}>News</NavLink>
+          <NavLink to="." end onClick={scrollToTop} className={({isActive}) => isActive ? 'active' : 'header-nav a'}>Stats</NavLink>
+          <NavLink to="legends" onClick={scrollToTop} className={({isActive}) => isActive ? 'active' : 'header-nav a'}>Legends</NavLink>
+          <NavLink to="news" onClick={scrollToTop} className={({isActive}) => isActive ? 'active' : 'header-nav a'}>News</NavLink>
         </nav>
       </header>
       <main>
