@@ -10,11 +10,11 @@ function Error({ error }) {
     const errorType = error.toString().charAt(0);
     let message
     if (errorType === '3') {
-      message = `page has been moved to somewhere else...`;
+      message = `Oops! Nevermind. This page has been moved...`;
     } else if (errorType === '4') {
-      message = `This Page does not exist...`;
+      message = `Oops! Nevermind. This page doesn't exist...`;
     } else if (errorType === '5') {
-      message = `The server is down...`;
+      message = `Oops! Nevermind. The server is down...`;
     } 
   
     return message;
