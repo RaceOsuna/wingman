@@ -15,7 +15,7 @@ function LegendProfile({ playerData }) {
         <img src={legend.ImgAssets.banner} />
         <h1>{name}</h1>
         <div className="legend-stats">
-          <p>{legend.data ? 'Kills:' + ' ' + legend.data[0].value : 'kills:' + ' ' + '0'}</p>
+          <p>{legend.data ? 'Kills:' + ' ' + legend.data[0].value : 'Kills:' + ' ' + '0'}</p>
           <p>{legend.data? 'Top Percentile:' + ' ' + Math.ceil(legend.data[0].rank.topPercent) + '%' : 'Top Percentile: No Data'}</p>
         </div>
       </div>

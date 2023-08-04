@@ -52,6 +52,7 @@ describe('View Legends', () => {
   it('Should be able to click on a lengend to view the legends profile and then go back to viewing all legends ', () => {
     cy.get('[href="/daltoosh/legends"]').click()
     cy.url().should('eq', 'http://localhost:3000/daltoosh/legends')
+    
     cy.get('.legend-card:nth-child(3)').click()
     cy.url().should('eq', 'http://localhost:3000/daltoosh/Horizon')
 
@@ -59,6 +60,18 @@ describe('View Legends', () => {
       cy.get('.profile > img[src="https://api.mozambiquehe.re/assets/banners/horizon.jpg"]').should('be.visible')
       cy.contains('p', 'Kills: 712').should('be.visible')
       cy.contains('p', 'Top Percentile: 16%').should('be.visible')
+    })
+
+    cy.get('[href="/daltoosh/legends"]').click()
+    cy.url().should('eq', 'http://localhost:3000/daltoosh/legends')
+
+    cy.get('.legend-card:nth-child(22)').click()
+    cy.url().should('eq', 'http://localhost:3000/daltoosh/Vantage')
+
+    cy.get('.legend-profile').within(() => {
+      cy.get('.profile > img[src="https://api.mozambiquehe.re/assets/banners/vantage.jpg"]').should('be.visible')
+      cy.contains('p', 'Kills: 0').should('be.visible')
+      cy.contains('p', 'Top Percentile: No Data').should('be.visible')
     })
 
     cy.get('[href="/daltoosh/legends"]').click()
