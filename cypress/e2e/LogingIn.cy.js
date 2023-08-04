@@ -37,7 +37,7 @@ describe('template spec', () => {
       cy.get('.app-header').within(() => {
         cy.get('div > h1').should('be.visible').should('have.text', 'Wingman')
         cy.get('[href="/"]').should('be.visible').should('have.text', 'New User')
-        cy.get('.active').should('be.visible').should('have.text', 'Stats')
+        cy.get('[href="/daltoosh"]').should('be.visible').should('have.text', 'Stats')
         cy.get('[href="/daltoosh/legends"]').should('be.visible').should('have.text', 'Legends')
         cy.get('[href="/daltoosh/news"]').should('be.visible').should('have.text', 'News')
       })
@@ -45,6 +45,7 @@ describe('template spec', () => {
       cy.get('.player-profile').within(() => {
         cy.get('img[src="https://secure.download.dm.origin.com/production/avatar/prod/1/599/416x416.JPEG"]').should('be.visible')
         cy.get('.name-avatar > h1').should('be.visible').should('have.text', 'Toosh Tees Off')
+        cy.get('.status').should('be.visible').should('have.text', 'offline')
         cy.get('img[src="https://api.mozambiquehe.re/assets/icons/pathfinder.png"]').should('be.visible')
         cy.get('.rank-details > :nth-child(1)').should('be.visible').should('have.text', 'Legend: Pathfinder')
         cy.get('.rank-details > :nth-child(2)').should('be.visible').should('have.text', 'Rank: Master')
