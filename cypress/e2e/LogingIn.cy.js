@@ -29,6 +29,7 @@ describe('template spec', () => {
     it('Should be able to login and view a players stats', () => {
       cy.wait('@news')
       cy.get('button[value="PC"]').click()
+      cy.get('.pc-message').should('be.visible').should('have.text', 'PC players use your Origin account name. If you are playing on Steam use the Origin account name linked to your Steam account. If your Steam account is not linked please do so.')
       cy.get('input[name="username"]').type("daltoosh")
       cy.get('a[name=submit]').should('be.visible')
       cy.get('a[name=submit]').click()
