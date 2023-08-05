@@ -29,7 +29,7 @@ describe('template spec', () => {
       cy.contains('button', 'PC').should('be.visible')
       cy.contains('button', 'XBOX').should('be.visible')
       cy.contains('button', 'PSN').should('be.visible')
-      cy.contains('p', 'Submit').should('be.visible')
+      cy.contains('p', 'Login').should('be.visible')
       cy.get('input[name="username"]').should('be.visible').should('have.value', '')
     })
   })
