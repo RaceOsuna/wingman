@@ -1,18 +1,22 @@
-# Getting Started with Create React App
+# Wingman
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Abstract
 
-In the project directory, you can run:
+# Apex Legends Stats Viewer
 
-### `npm start`
+Wingman is a user-friendly web application that allows players to effortlessly access their personal game statistics. Choose your platform - PC, Xbox, or Playstation - and enter your username to log in and view your performance data. Dive deeper by exploring detailed character stats, or stay updated with the latest Apex Legends news. This app provides an engaging and convenient way to track your progress and stay connected to the game. Experience your Apex Legends journey like never before with Wingman.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Contributors
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p><a href="https://www.linkedin.com/in/race-osuna-17a827267/">Race Osuna</a>
+
+
+
+
+
+
 
 ### `npm test`
 
