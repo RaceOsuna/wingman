@@ -9,7 +9,11 @@ function Form({player, setPlayer, setPlatform, getPlayerData, platform }) {
   const [buttonStyle, searchButtonStyle] = useState('')
 
   function handleSubmit() {
+    if (!platform || !player) {
+      alert('please selct a platform and provide a username')
+    } else {
     getPlayerData()
+    }
   }
 
   const pc = platform === "PC" ? {'backgroundColor': 'green'} : null

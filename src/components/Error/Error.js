@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import './Error.css'
 
 function Error({ error }) {
-  console.log(error);
-  console.log(typeof(error));
 
   function displayError() {
     const errorType = error.toString().charAt(0);
