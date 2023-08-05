@@ -17,22 +17,22 @@ Wingman is a user-friendly web application that allows players to effortlessly a
 
 ### Learning Goals
 
-<u>Technology</u>
-React
-Router
-Asynchronous JavaScript
-End to end testing with Cypress
-Create personas and user stories to describe your target audience.
+- Technology
+-- React
+-- Router
+-- Asynchronous JavaScript
+-- End to end testing with Cypress
 
-Work within constraints to deliver a product for your niche audience, which helps solve a problem unique to them.
+- Create personas and user stories to describe your target audience.
 
-Your applications must have the following core functionality:
-Display the data from the API in a way that applies directly to your audience
-Ability for users to store/manipulate the data displayed in the application, such as (choose one) favoriting/unfavoriting, adding to/removing from a list, searching, commenting, etc
-Multiple views handled by Router
-Be deployed using Vercel, Heroku, Surge, or any other similar service
-PropTypes has been implemented in all components with props
-App is responsive across mobile, tablet and desktop sizes
+- Work within constraints to deliver a product for your niche audience, which helps solve a problem unique to them.
+
+- Functionality:
+-- Display the data from the API in a way that applies directly to your audience
+-- Ability for users to manipulate the data displayed in the application
+-- Multiple views handled by Router
+-- PropTypes implemented in all components with props
+-- App is responsive across mobile, tablet and desktop sizes
 
 
 ### `npm run eject`
