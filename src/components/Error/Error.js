@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './Error.css'
+import { NavLink } from 'react-router-dom';
 
-function Error({ error }) {
+function Error({ error, setPlayer, setPlatform, setPlayerData, setError }) {
 
   function displayError() {
     const errorType = error.toString().charAt(0);
@@ -18,9 +19,21 @@ function Error({ error }) {
     return message;
   }
 
+  function refresh(){
+    setPlatform('')
+    setPlayerData({})
+    setPlayer('')
+    setError(0)
+  }
+
   return (
     <div className='error'>
-      {error ? <h1>{error + ' ' + displayError()}</h1>
+      {error ? 
+      <div>
+        <h1>{error}</h1>
+        <h2>{displayError()}</h2>
+        <NavLink onClick={refresh} to="/">🔄 Return Home</NavLink>
+      </div>
       :
       <h1>Loading...</h1>}
     </div>
@@ -28,7 +41,11 @@ function Error({ error }) {
 }
 
 Error.propTypes = {
-  error: PropTypes.string.isRequired
+  error: PropTypes.number,
+  setError: PropTypes.func,
+  setPlayer: PropTypes.func,
+  setPlatform: PropTypes.func,
+  setPlayerData: PropTypes.func
 }
 
 export default Error

@@ -15,7 +15,7 @@ function App() {
   const [platform, setPlatform] = useState('');
   const [player, setPlayer] = useState('');
   const [playerData, setPlayerData] = useState({});
-  const [error, setError] = useState('');
+  const [error, setError] = useState(0);
   const [news, setNews] = useState([]);
   const navigate = useNavigate()
 
@@ -69,7 +69,7 @@ function App() {
             <Route path={`:name`} element={<LegendProfile playerData={playerData} />} />
           </Route>
           }
-          <Route path="*" element={<Error error={error} />} />
+          <Route path="*" element={<Error error={error} setPlatform={setPlatform} setPlayer={setPlayer} setPlayerData={setPlayerData} setError={setError}/>} />
         </Routes>
       </div>
     </div>

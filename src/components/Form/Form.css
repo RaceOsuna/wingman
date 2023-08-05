@@ -49,3 +49,10 @@
 .platforms button:hover {
   cursor: pointer;
 }
+
+.pc-message {
+  font-size: 16px;
+  width: 300px;
+  color: #f03b3b;
+
+}
