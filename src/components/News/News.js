@@ -6,7 +6,8 @@ import './News.css'
 function News({ news }) {
   
   const displayNews = news.map(article => (
-    <NewsCard 
+    <NewsCard
+      key={article.title} 
       title={article.title}
       link={article.link}
       image={article.img}
