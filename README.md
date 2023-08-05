@@ -1,10 +1,6 @@
 # Wingman
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Abstract
-
-# Apex Legends Stats Viewer
 
 Wingman is a user-friendly web application that allows players to effortlessly access their personal game statistics. Choose your platform - PC, Xbox, or Playstation - and enter your username to log in and view your performance data. Dive deeper by exploring detailed character stats, or stay updated with the latest Apex Legends news. This app provides an engaging and convenient way to track your progress and stay connected to the game. Experience your Apex Legends journey like never before with Wingman.
 
@@ -12,26 +8,32 @@ Wingman is a user-friendly web application that allows players to effortlessly a
 
 <p><a href="https://www.linkedin.com/in/race-osuna-17a827267/">Race Osuna</a>
 
+### install
 
+- clone down this repo to your local machine (run the command `git clone git@github.com:RaceOsuna/wingman.git`)
+- cd into the repository
+- run command `npm install`
+- run command `npm start`
 
+### Learning Goals
 
+<u>Technology</u>
+React
+Router
+Asynchronous JavaScript
+End to end testing with Cypress
+Create personas and user stories to describe your target audience.
 
+Work within constraints to deliver a product for your niche audience, which helps solve a problem unique to them.
 
+Your applications must have the following core functionality:
+Display the data from the API in a way that applies directly to your audience
+Ability for users to store/manipulate the data displayed in the application, such as (choose one) favoriting/unfavoriting, adding to/removing from a list, searching, commenting, etc
+Multiple views handled by Router
+Be deployed using Vercel, Heroku, Surge, or any other similar service
+PropTypes has been implemented in all components with props
+App is responsive across mobile, tablet and desktop sizes
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
