@@ -13,7 +13,7 @@ function LegendCard({ name, image }) {
       <NavLink onClick={scrollToTop} to={`/${player}/${name}`}>
         <h1>{name}</h1>
         <div className='legend-card-icon'>
-          <img src={image} />
+          <img src={image} alt={`${name} icon`}/>
         </div>
       </NavLink>
     </div>

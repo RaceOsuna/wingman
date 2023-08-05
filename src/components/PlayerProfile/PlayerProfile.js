@@ -11,7 +11,7 @@ function PlayerProfile({ playerData }) {
     <div className='player-profile'>
       <div className='container'>
         <div className='name-avatar'>
-          <img src={playerData.global.avatar} />
+          <img src={playerData.global.avatar} alt={`${playerData.global.name} avatar`}/>
           <h1>{playerData.global.name}</h1>
         </div>
         <p className="status" style={{color: toggleStatus}}>{playerData.realtime.currentState}</p>
