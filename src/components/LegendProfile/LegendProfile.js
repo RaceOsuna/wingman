@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 import { useParams } from 'react-router-dom'
 import './LegendProfile.css'
 
@@ -16,7 +16,7 @@ function LegendProfile({ playerData }) {
         <h1>{name}</h1>
         <div className="legend-stats">
           <p>{legend.data ? 'Kills:' + ' ' + legend.data[0].value : 'Kills:' + ' ' + '0'}</p>
-          <p>{legend.data? 'Top Percentile:' + ' ' + Math.ceil(legend.data[0].rank.topPercent) + '%' : 'Top Percentile: No Data'}</p>
+          <p>{'Top Percentile:' + ' ' + (legend.data && legend.data[0].rank.topPercent !== "NOT_CALCULATED_YET" ? Math.ceil(legend.data[0].rank.topPercent) + '%' : 'No Data')}</p>
         </div>
       </div>
     </div>
