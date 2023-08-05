@@ -8,7 +8,11 @@ Wingman is a user-friendly web application that allows players to effortlessly a
 
 ### Preview
 
-[RPReplay_Final1691262578.mov.zip](https://github.com/RaceOsuna/wingman/files/12268017/RPReplay_Final1691262578.mov.zip)
+
+
+https://github.com/RaceOsuna/wingman/assets/119973475/896f41d8-609f-4e51-b203-3c14a705657c
+
+
 
 ### Contributors
 
