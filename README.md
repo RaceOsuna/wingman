@@ -28,7 +28,7 @@ Wingman is a user-friendly web application that allows players to effortlessly a
 
 - Create personas and user stories to describe your target audience.
 
-- Work within constraints to deliver a product for your niche audience, which helps solve a problem unique to them.
+- Work within constraints to deliver a product for a niche audience, which helps solve a problem unique to them.
 
 - Functionality
   - Display the data from the API in a way that applies directly to your audience
