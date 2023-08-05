@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Routes, Route, } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Form from './components/Form/Form';
 import PlayerProfile from './components/PlayerProfile/PlayerProfile';
 import AllLegends from './components/AllLegends/AllLegends';
@@ -17,6 +17,16 @@ function App() {
   const [playerData, setPlayerData] = useState({});
   const [error, setError] = useState('');
   const [news, setNews] = useState([]);
+  const navigate = useNavigate()
+
+  useEffect(() => {
+  if (error) {
+    navigate("*")
+  } else if (!player && !platform) {
+    navigate("/")
+  }
+}, [player, platform])
+
 
   function getPlayerData() {
     fetch(`https://api.mozambiquehe.re/bridge?auth=bae15f3f336782882976819cd65d9ef3&player=${player}&platform=${platform}`)
