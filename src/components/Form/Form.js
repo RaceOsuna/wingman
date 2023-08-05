@@ -28,7 +28,7 @@ function Form({player, setPlayer, setPlatform, getPlayerData, platform }) {
       </div>
       <div className='form'>
         <input type="text" name="username" value={player} placeholder="Username" onChange={(e) => setPlayer(e.target.value)} />
-        {player && platform ? <Link name="submit" to={`/${player}`} onClick={handleSubmit}>Submit</Link> : <p className='dummy-button' onClick={alertUser}>Submit</p>}
+        {player && platform ? <Link name="submit" to={`/${player}`} onClick={handleSubmit}>Login</Link> : <p className='dummy-button' onClick={alertUser}>Login</p>}
       </div>
       {platform === "PC" && <p className='pc-message'>PC players use your Origin account name. If you are playing on Steam use the Origin account name linked to your Steam account. If your Steam account is not linked please do so.</p>}
     </div>
