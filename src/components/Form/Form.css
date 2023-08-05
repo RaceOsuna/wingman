@@ -56,3 +56,14 @@
   color: #f03b3b;
 
 }
+
+.dummy-button {
+  width: 120px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.dummy-button:hover {
+  cursor: pointer;
+}
