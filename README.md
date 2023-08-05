@@ -6,6 +6,10 @@
 
 Wingman is a user-friendly web application that allows players to effortlessly access their personal game statistics. Choose your platform - PC, Xbox, or Playstation - and enter your username to log in and view your performance data. Dive deeper by exploring detailed character stats, or stay updated with the latest Apex Legends news. This app provides an engaging and convenient way to track your progress and stay connected to the game. Experience your Apex Legends journey like never before with Wingman.
 
+### Preview
+
+[RPReplay_Final1691262578.mov.zip](https://github.com/RaceOsuna/wingman/files/12268017/RPReplay_Final1691262578.mov.zip)
+
 ### Contributors
 
 <p><a href="https://www.linkedin.com/in/race-osuna-17a827267/">Race Osuna</a>
