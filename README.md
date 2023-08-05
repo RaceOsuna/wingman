@@ -18,10 +18,10 @@ Wingman is a user-friendly web application that allows players to effortlessly a
 ### Learning Goals
 
 - Technology
--- React
--- Router
--- Asynchronous JavaScript
--- End to end testing with Cypress
+- - React
+- - Router
+- - Asynchronous JavaScript
+- - End to end testing with Cypress
 
 - Create personas and user stories to describe your target audience.
 
