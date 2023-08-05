@@ -12,7 +12,7 @@ function LegendProfile({ playerData }) {
   return (
     <div className='legend-profile'>
       <div className='profile'>
-        <img src={legend.ImgAssets.banner} />
+        <img src={legend.ImgAssets.banner} alt={`${name} icon`} />
         <h1>{name}</h1>
         <div className="legend-stats">
           <p>{legend.data ? 'Kills:' + ' ' + legend.data[0].value : 'Kills:' + ' ' + '0'}</p>
