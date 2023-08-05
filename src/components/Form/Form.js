@@ -12,7 +12,7 @@ function Form({player, setPlayer, setPlatform, getPlayerData, platform }) {
     if (!platform || !player) {
       alert('please selct a platform and provide a username')
     } else {
-    getPlayerData()
+      getPlayerData()
     }
   }
 

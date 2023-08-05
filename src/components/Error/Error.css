@@ -8,3 +8,9 @@
   color: rgb(240, 59, 59);
   padding-top: 120px;
 }
+
+.error div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
