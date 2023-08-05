@@ -1,5 +1,7 @@
 # Wingman
 
+[Live Site](https://wingman-five.vercel.app/)
+
 ## Abstract
 
 Wingman is a user-friendly web application that allows players to effortlessly access their personal game statistics. Choose your platform - PC, Xbox, or Playstation - and enter your username to log in and view your performance data. Dive deeper by exploring detailed character stats, or stay updated with the latest Apex Legends news. This app provides an engaging and convenient way to track your progress and stay connected to the game. Experience your Apex Legends journey like never before with Wingman.
