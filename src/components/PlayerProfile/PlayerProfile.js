@@ -22,9 +22,9 @@ function PlayerProfile({ playerData }) {
       <div className='rank-details'>
         <p>Legend: {playerData.legends.selected.LegendName}</p>
         <p>Rank: {playerData.global.rank.rankName}</p>
-        <p>LP: {playerData.global.rank.rankScore}</p>
-        {playerData.total.kills ? <p>Total Kills: {playerData.total.kills.value}</p> : null}
-        {playerData.total.damage ? <p>Total Damage: {playerData.total.damage.value}</p> : null}
+        <p>LP: {playerData.global.rank.rankScore.toLocaleString()}</p>
+        {playerData.total.kills ? <p>Total Kills: {playerData.total.kills.value.toLocaleString()}</p> : null}
+        {playerData.total.damage ? <p>Total Damage: {playerData.total.damage.value.toLocaleString()}</p> : null}
       </div>
     </div>
   )
